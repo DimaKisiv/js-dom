@@ -30,6 +30,7 @@ function operationClick(ev) {
             break;
         case 'sqr':
             sqrOperation();
+            break;
         case 'x':
             removeOperation();
             break;
@@ -54,9 +55,9 @@ function sqrtOperation() {
 }
 
 function sqrOperation() {
-    let doubledResult = parseInt(display.value);
-    if (!isNaN(doubledResult)) {
-        display.value = doubledResult;git 
+    let numericValue = parseFloat(display.value);
+    if (!isNaN(numericValue)) {
+        display.value = numericValue * numericValue;
         resultState = true;
     }
 }
