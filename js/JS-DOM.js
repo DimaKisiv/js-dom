@@ -55,7 +55,7 @@ function sqrtOperation() {
 
 function sqrOperation() {
     let doubledResult = parseInt(display.value);
-    if (!isNaN(doubledResult) {
+    if (!isNaN(doubledResult)) {
         display.value = doubledResult;
         resultState = true;
     }
